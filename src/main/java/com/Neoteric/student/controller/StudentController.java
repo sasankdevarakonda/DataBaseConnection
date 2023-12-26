@@ -16,22 +16,20 @@ public class StudentController {
     @GetMapping(value = "/getStudents")
     public  List<StudentEntity>getstudents(){
         return studentService.getStudents();
+
     }
-    @GetMapping(value = "/getTeachercount")
-    public int getTeachercount(){
-        schoolService ss= schoolService.getschoolService();
-        return ss.getTeachercount();
-    }
+
     @GetMapping(value = "/getadd")
     public int getadd(){
-       schoolService ss=schoolService.getschoolService();
+       schoolService ss=new schoolService();
       return ss.getadd();
     }
     @GetMapping(value = "/getremove")
     public int getremove(){
-        schoolService ss=schoolService.getschoolService();
+        schoolService ss=new schoolService();
         return ss.getremove();
     }
+
 
     }
 

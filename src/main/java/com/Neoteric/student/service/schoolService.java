@@ -7,6 +7,10 @@ public class schoolService {
         System.out.println("From counting in School Teachers: "+teachercount);
 
     }
+    public static int getteacher(){
+        System.out.println("Hello teachers");
+        return 0;
+    }
     public int getTeachercount(){
         return teachercount;
 
