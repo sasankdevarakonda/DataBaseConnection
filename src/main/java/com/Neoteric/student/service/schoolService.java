@@ -2,7 +2,7 @@ package com.Neoteric.student.service;
 
 public class schoolService {
     private static int teachercount=20;
-   // private static int schoolservice;
+    private static  schoolService schoolservice;
     public schoolService(){
         System.out.println("From counting in School Teachers: "+teachercount);
 
@@ -17,14 +17,17 @@ public class schoolService {
     public int getremove(){
         return teachercount=teachercount-1;
     }
-    /*public static int getschoolService(){
+    public static schoolService getschoolService(){
 
         if (schoolservice == null){
-            schoolservice=schoolService.schoolservice;
+            System.out.println("Exsisting teacher Inner count: "+teachercount);
+             schoolservice=new schoolService();
+             return schoolservice;
+        }else{
+            System.out.println("Esisting teacher outer count: "+teachercount);
             return schoolservice;
 
-        }else{
-            return schoolservice;
         }
-    }*/
+
+    }
 }

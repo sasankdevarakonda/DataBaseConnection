@@ -19,17 +19,17 @@ public class StudentController {
     }
     @GetMapping(value = "/getTeachercount")
     public int getTeachercount(){
-        schoolService ss=new schoolService();
+        schoolService ss= schoolService.getschoolService();
         return ss.getTeachercount();
     }
     @GetMapping(value = "/getadd")
     public int getadd(){
-       schoolService ss=new schoolService();
+       schoolService ss=schoolService.getschoolService();
       return ss.getadd();
     }
     @GetMapping(value = "/getremove")
     public int getremove(){
-        schoolService ss=new schoolService();
+        schoolService ss=schoolService.getschoolService();
         return ss.getremove();
     }
 
