@@ -24,6 +24,11 @@ public class StudentController {
        schoolService ss=new schoolService();
       return ss.getadd();
     }
+    @GetMapping(value = "/getTeachercount")
+    public int getTeachercount(){
+        schoolService ss=new schoolService();
+        return ss.getTeachercount();
+    }
     @GetMapping(value = "/getremove")
     public int getremove(){
         schoolService ss=new schoolService();

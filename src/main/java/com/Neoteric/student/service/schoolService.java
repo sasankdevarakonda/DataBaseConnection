@@ -7,10 +7,7 @@ public class schoolService {
         System.out.println("From counting in School Teachers: "+teachercount);
 
     }
-    public static int getteacher(){
-        System.out.println("Hello teachers");
-        return 0;
-    }
+
     public int getTeachercount(){
         return teachercount;
 
@@ -21,17 +18,5 @@ public class schoolService {
     public int getremove(){
         return teachercount=teachercount-1;
     }
-    public static schoolService getschoolService(){
 
-        if (schoolservice == null){
-            System.out.println("Exsisting teacher Inner count: "+teachercount);
-             schoolservice=new schoolService();
-             return schoolservice;
-        }else{
-            System.out.println("Esisting teacher outer count: "+teachercount);
-            return schoolservice;
-
-        }
-
-    }
 }
